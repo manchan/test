@@ -19,7 +19,7 @@ var Recorder = {
     init: function(){
         var o = this;
         o.recognition = new SpeechRecognition();
-        o.recognition.lang = 'ja';
+        o.recognition.lang = 'en-US';
         o.recognition.continuous = true;
     },
     recStart: function(){
@@ -46,7 +46,7 @@ var Speeker = {
     init: function(){
         var o = this;
         o.synthes = new SpeechSynthesisUtterance();
-        o.synthes.lang = "ja-JP"
+        o.synthes.lang = "en-US"
     },
     say: function(msgText){
         var o = this;
